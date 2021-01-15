@@ -4,43 +4,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Send Mobile App | zporter.com</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     
     <header>
-      <a href="/">
-        <p>Logo</p>
-        <img src="" alt="">
-      </a>
-      <nav>
-        <a href="/work/">Work</a>
-        <a href="/theory.html">Theory</a>
-        <a href="/about.html">About</a>
-      </nav>
+      <div class="container head-flex">
+        <a href="/">
+          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+        </a>
+        <nav>
+          <a href="/work/">Work</a>
+          <a href="/theory.html">Theory</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
     </header>
 
-    <section class="hero">
-      <a href="/work/melaleuca.html">Back to Melaleuca</a>
-      <h1>Quick Send Mobile App</h1>
-      <div class="project-meta">
-        <div class="meta-item">
-          <p class="content-label">Summary</p>
-          <p>{{summary}}</p>
+    <section class="hero hero-project">
+      <div class="container">
+        <a href="/work/melaleuca.html">Back to Melaleuca</a>
+        <h1>Quick Send Mobile App</h1>
+        <div class="project-meta">
+          <div class="meta-item">
+            <p class="content-label">Summary</p>
+            <p>{{summary}}</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-block">
-      <h2>The Challenge</h2>
-      <p>{{content}}</p>
-    </section>
-
-    <!-- Add Steps taken here -->
+    <div class="content">
+      <section class="content-block">
+        <div class="container">
+          <h2>The Challenge</h2>
+          <p>{{content}}</p>
+        </div>
+      </section>
+  
+      <!-- Add Steps taken here -->
+    </div>
     
     <footer>
-      <p><strong>Return to Top</strong></p>
-      <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+      <div class="container">
+        <p><strong>Return to Top</strong></p>
+        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+      </div>
     </footer>
 
   </body>
