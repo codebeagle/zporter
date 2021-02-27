@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarity Microsite | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,143 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/melaleuca.html">Back to Melaleuca</a>
-        <h1>Clarity Microsite</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/melaleuca.html">Melaleuca</a>
+          <p class="divider">/</p>
+          <p>Clarity Microsite</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Clarity Microsite</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Role</p>
+              <p>Design</p>
+              <p>Front-end Development</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Adobe Photoshop, Adobe Illustrator, Adobe Flash</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Product launch microsite for annual convention</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>Melaleuca had developed a new line of products that removes acne and heals skin. I was asked to create a microsite experience similar to <a href="/projects/melaleuca/gc-control.html">GC Control</a> to launch the new product at the annual customer convention. It needed to be interactive and minimal in style while still sharing the information needed.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>Using GC Control as a starting point, I designed an experience using the concept of blur and focus to tell a story about clear skin and self confidence. Due to the limitation of web technologies, I used Adobe Flash to create the site with the desired effects and animations.</p>
+          <div class="one-col">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-intro-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-intro-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-intro-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-intro-1200.jpg" alt="intro page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-truth-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-truth-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-truth-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-truth-1200.jpg" alt="truth page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-results-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-results-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-results-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-results-1200.jpg" alt="proven results page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-prevention-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-prevention-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-prevention-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-prevention-1200.jpg" alt="prevention page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-video-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-video-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-video-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-video-1200.jpg" alt="video page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-system-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-system-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-system-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-system-1200.jpg" alt="system page">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/clarity-single-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/clarity-single-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/clarity-single-360.jpg">
+              <img class="shadow" src="/assets/images/projects/clarity-single-1200.jpg" alt="buy page">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More Melaleuca Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/melaleuca/gc-control.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/gc-control-thumbnail.jpg" alt="GC Control microsite thumbnail">
+                </div>
+                <p>GC Control Microsite</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/vitality.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/vitality-thumbnail.jpg" alt="Vitality microsite thumbnail">
+                </div>
+                <p>Vitality Microsite</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/learn-to-earn.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/learn-to-earn-thumbnail.jpg" alt="Learn to Earn thumbnail">
+                </div>
+                <p>Learn To Earn</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/product-stories.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/product-stories-thumbnail.jpg" alt="Product Stories thumbnail">
+                </div>
+                <p>100 Product Stories</p>
+              </a>
+            </div>
         </div>
       </section>
   
@@ -48,8 +157,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

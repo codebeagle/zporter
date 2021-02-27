@@ -1,0 +1,132 @@
+.project-block-content {
+    padding: 80px 0;
+  }
+  
+  .project-block-content p {
+    max-width: 1020px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+  }
+  
+  @media screen and (min-width: 525px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .project-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .project-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .project-item a {
+    text-align: center;
+  }
+  
+  .project-item .thumbnail {
+    height: 240px;
+    overflow: hidden;
+    background-color: #C4C4C4;
+    position: relative;
+  }
+  
+  .project-item .thumbnail img {
+    position: absolute;
+    margin: auto;
+    height: 240px;
+    top: 0;
+    bottom: 0;
+    transition: all 200ms ease-out;
+    transform: translateX(-50%);
+    transform-origin: center;
+  }
+  
+  .project-item .thumbnail:hover img {
+    height: 255px;
+  }
+  
+  .project-tag {
+    background-color: $orange;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+.block-project {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 10px;
+
+  &.block-project-mastercontrol {
+    background-image: url('/assets/images/banners/banner-mastercontrol.jpg');
+  }
+
+  &.block-project-aquamira {
+    background-image: url('/assets/images/banners/banner-aquamira.jpg');
+  }
+
+  &.block-project-melaleuca {
+    background-image: url('/assets/images/banners/banner-melaleuca.jpg');
+  }
+
+  &.block-project-herff-jones {
+    background-image: url('/assets/images/banners/banner-herff-jones.jpg');
+  }
+
+  &:hover {
+    .overlay {
+      opacity: 0.333;
+    }
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $black;
+    opacity: 0.8;
+    transition: all 250ms ease-out;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+
+  h2 {
+    margin: 0 0 5px 0;
+    color: $white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  p {
+    margin: 0;
+    color: $white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+}
+  
+  
+  
+  
+  
+  

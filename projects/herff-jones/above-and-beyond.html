@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Above and Beyond | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,124 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/herff-jones.html">Back to MasterControl</a>
-        <h1>Above and Beyond</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/herff-jones.html">Herff Jones</a>
+          <p class="divider">/</p>
+          <p>Above and Beyond</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Above and Beyond</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Role</p>
+              <p>Design</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Yearbook design package for Maple Mountain High School.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>The team at Maple Mountain High School requested designs for their yearbook theme "Above and Beyond." The designs needed to use superhero tropes and comic themes without feeling cartoony or childish. The concept needed to help tell the story that the students went above and beyond and they are the real heros. The design package was order included a cover, front endsheet, title page, and division page design.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>I began with a custom hero illustration of a non-descript hero above the earth so the reader had a sense of epic heroics. I used custom typography and photo treatments to carry the theme through the publication.</p>
+          <div class="one-col">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/above-and-beyond-cover-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/above-and-beyond-cover-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/above-and-beyond-cover-360.jpg">
+              <img class="shadow" src="/assets/images/projects/above-and-beyond-cover-1200.jpg" alt="cover design">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/above-and-beyond-front-end-sheet-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/above-and-beyond-front-end-sheet-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/above-and-beyond-front-end-sheet-360.jpg">
+              <img class="shadow" src="/assets/images/projects/above-and-beyond-front-end-sheet-1200.jpg" alt="front endsheet design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/above-and-beyond-title-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/above-and-beyond-title-360.jpg">
+              <img class="shadow" src="/assets/images/projects/above-and-beyond-title-720.jpg" alt="title page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/above-and-beyond-division-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/above-and-beyond-division-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/above-and-beyond-division-360.jpg">
+              <img class="shadow" src="/assets/images/projects/above-and-beyond-division-1200.jpg" alt="division page design">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More Herff Jones Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/herff-jones/uproar.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/uproar-thumbnail.jpg" alt="uproar yearbook thumbnail">
+                </div>
+                <p>Uproar</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/our-journey.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/journey-thumbnail.jpg" alt="show your wild side yearbook thumbnail">
+                </div>
+                <p>Our Journey</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/re-define.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/re-define-thumbnail.jpg" alt="redefine yearbook thumbnail">
+                </div>
+                <p>Redefine</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/brave-pride.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/brave-pride-thumbnail.jpg" alt="brave pride yearbook thumbnail">
+                </div>
+                <p>Brave Pride</p>
+              </a>
+            </div>            
+          </div>
         </div>
       </section>
   
@@ -48,8 +138,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

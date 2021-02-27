@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitality Microsite | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,141 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
      <div class="container">
-      <a href="/work/melaleuca.html">Back to Melaleuca</a>
-      <h1>Vitality Microsite</h1>
-      <div class="project-meta">
-        <div class="meta-item">
-          <p class="content-label">Summary</p>
-          <p>{{summary}}</p>
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <p class="divider">/</p>
+        <a href="/work/">Work</a>
+        <p class="divider">/</p>
+        <a href="/work/melaleuca.html">Melaleuca</a>
+        <p class="divider">/</p>
+        <p>Vitality Microsite</p>
+      </div>
+      <div class="flex-wrapper">
+        <h1>Vitality Microsite</h1>
+        <div class="project-meta">
+          <div class="meta-item">
+            <p class="content-label">Roles</p>
+            <p>Design</p>
+            <p>Front-end Development</p>
+          </div>
+          <div class="meta-item">
+            <p class="content-label">Tools</p>
+            <p>Adobe Photoshop, HTML, CSS, Javascript</p>
+          </div>
+          <div class="meta-item">
+            <p class="content-label">Summary</p>
+            <p>Microsite design and build for a health-centric marketing initiative.</p>
+          </div>
         </div>
       </div>
      </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>Melaleuca's health focused product brand, Vitality for Life, started a large scale marketing initative to produce a monthly magazine and asked my team to build a website to support it. The site needed to provide valuable resources to customers and help create interest in the health products Melaleuca offers. Additionally, it needed to help promote the identity of the Vitality campaign.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>I created this site using the Vitality brand elements and organized the extensive amount of content into an interface that could be easy to navigate while remaining scalable for future content. As the content and resources continued to be produced, I expanded the site to include new types of content and interactive features.</p>
+          <div class="two-col">
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/vitality-home-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/vitality-home-360.jpg">
+              <img class="shadow" src="/assets/images/projects/vitality-home-1200.jpg" alt="home page">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/vitality-exercise-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/vitality-exercise-360.jpg">
+              <img class="shadow" src="/assets/images/projects/vitality-exercise-1200.jpg" alt="exercise page">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/vitality-challenges-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/vitality-challenges-360.jpg">
+              <img class="shadow" src="/assets/images/projects/vitality-challenges-1200.jpg" alt="challenges page">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/vitality-main-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/vitality-main-360.jpg">
+              <img class="shadow" src="/assets/images/projects/vitality-main-1200.jpg" alt="main page">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/vitality-fit-for-life-challenges-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/vitality-fit-for-life-challenges-360.jpg">
+              <img class="shadow" src="/assets/images/projects/vitality-fit-for-life-challenges-1200.jpg" alt="fit for life challenge page">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="">
+              <source media="(min-width: 0)" srcset="">
+              <img class="shadow" src="" alt="">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="">
+              <source media="(min-width: 0)" srcset="">
+              <img class="shadow" src="" alt="">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="">
+              <source media="(min-width: 0)" srcset="">
+              <img class="shadow" src="" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More Melaleuca Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/melaleuca/learn-to-earn.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/learn-to-earn-thumbnail.jpg" alt="Learn to Earn thumbnail">
+                </div>
+                <p>Learn To Earn</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/quick-send-mobile-app.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/quick-send-thumbnail.jpg" alt="Quick Send mobile app thumbnail">
+                </div>
+                <p>Quick Send Mobile App</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/learn-to-earn.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/learn-to-earn-thumbnail.jpg" alt="Learn to Earn thumbnail">
+                </div>
+                <p>Learn To Earn</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/melaleuca/product-stories.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/product-stories-thumbnail.jpg" alt="Product Stories thumbnail">
+                </div>
+                <p>100 Product Stories</p>
+              </a>
+            </div>
         </div>
       </section>
   
@@ -48,8 +155,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

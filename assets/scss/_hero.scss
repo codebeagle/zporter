@@ -1,0 +1,118 @@
+.hero h1,
+.hero p {
+  color: $white;
+}
+
+.hero-alt {
+  padding-bottom: 60px;
+}
+
+.hero-home {
+  position: relative; 
+}
+
+.hero .flex-wrapper {
+  flex-direction: column;
+}
+
+.hero-home .hero-content {
+  max-width: 655px;
+  padding-right: 60px;
+  z-index: 1;
+  
+  .self-portrait-thumbnail {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
+
+.hero-home h1 {
+  font-weight: 100;
+  font-size:48px;
+  line-height: 56px;
+  z-index: 1
+}
+
+.hero-work {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.9;
+    z-index: 0;
+    top: 0;
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+  }
+
+  &.hero-mastercontrol {
+    background-image: url('/assets/images/hero/hero-mastercontrol.jpg');
+  }
+
+  &.hero-aquamira {
+    background-image: url('/assets/images/hero/hero-aquamira.jpg');
+  }
+
+  &.hero-melaleuca {
+    background-image: url('/assets/images/hero/hero-melaleuca.jpg');
+  }
+
+  &.hero-herff-jones {
+    background-image: url('/assets/images/hero/hero-herff-jones.jpg');
+  }
+}
+
+.hero-work .flex-wrapper,
+.hero-project .flex-wrapper {
+  justify-content: space-between;
+}
+
+.hero-work .project-meta,
+.hero-project .project-meta {
+  max-width: 380px;
+  width: 100%;
+  float: right;
+} 
+
+.hero-work .project-meta .meta-item,
+.hero-project .project-meta .meta-item {
+  margin-top: 30px;
+}
+
+.hero-work .project-meta p,
+.hero-project .project-meta p {
+  margin: 5px 0;
+}
+
+.hero-work,
+.hero-project {
+  padding: 30px 0
+}
+
+@media screen and (min-width: 768px) {
+  .hero-work .flex-wrapper,
+  .hero-project .flex-wrapper {
+    flex-direction: row;
+  }
+
+  .hero-work .project-meta .meta-item,
+  .hero-project .project-meta .meta-item {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-home .flex-wrapper {
+    flex-direction: row;
+  }
+}

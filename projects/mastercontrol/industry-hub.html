@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GxP Lifeline Refresh | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <title>Industry Hub | zporter.com</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,114 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/mastercontrol.html">Back to MasterControl</a>
-        <h1>GxP Lifeline Refresh</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/mastercontrol.html">MasterControl</a>
+          <p class="divider">/</p>
+          <p>Industry Hub</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Industry Hub</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Roles</p>
+              <p>Design</p>
+              <p>Front-end Development</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Figma, HTML, CSS, Javascsript</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Custom page components to create a unified experience.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>Our digital marketing team needed a way to unify our industry landing pages. As part of the task, we also needed to find a better way to explore multiple industries.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>The challenge was met easily through the creation of new page components. I designed a new hero blade and new navigation blade that when added to pages allowed for lateral navigation between industries. Several dynamic animations were used to enhance the flow and tie the industry pages to the navigation through color.</p>
+          <div class="one-col">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/industry-hub-landing-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/industry-hub-landing-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/industry-hub-landing-360.jpg">
+              <img class="shadow" src="/assets/images/projects/industry-hub-landing-1200.jpg" alt="industry hub landing page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/industry-hub-single-industry-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/industry-hub-single-industry-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/industry-hub-single-industry-360.jpg">
+              <img class="shadow" src="/assets/images/projects/industry-hub-single-industry-1200.jpg" alt="industry hub single industry page design">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More MasterControl Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/mastercontrol/med-device-trends-brief.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/med-device-trends-brief-thumbnail.jpg" alt="med device trends brief thumbnail">
+                </div>
+                <p>Med Device Trends Brief</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/virtual-masters-conference.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/virtual-conference-2020-thumbnail.jpg" alt="virtual masters conference thumbnail">
+                </div>
+                <p>Virtual Masters Conference</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/ppc-landing-pages.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/ppc-pages-thumbnail.jpg" alt="PPC pages thumbnail">
+                </div>
+                <p>PPC Landing Pages</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/gxp-lifeline-refresh.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/gxp-lifeline-refresh-thumbnail.jpg" alt="GxP Lifeline thumbnail">
+                </div>
+                <p>GxP Lifelife Refresh</p>
+              </a>
+            </div>            
+          </div>
         </div>
       </section>
   
@@ -48,8 +128,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

@@ -1,0 +1,31 @@
+h1 {
+    font-family: $display-font;
+    font-weight: 100;
+    font-size: 72px;
+    line-height: 100%;
+}
+
+h2 {
+    font-family: $base-font;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+p, li, a, label, div {
+    font-family: $base-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+a {
+    color: $orange;
+}
+
+.content-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $gray-100;
+}

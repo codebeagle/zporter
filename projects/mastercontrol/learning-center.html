@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Center | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,126 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/mastercontrol.html">Back to MasterControl</a>
-        <h1>Learning Center</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/mastercontrol.html">MasterControl</a>
+          <p class="divider">/</p>
+          <p>Learning Center</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Learning Center</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Role</p>
+              <p>Design</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Figma</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Microsite designs for third-party implementation.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>MasterControl decided to utilize the "Uberlip" marketing service to create a place for users to gain access to resource assets, such as videos and white papers. This design needed to be handed off for development to the Uberflip team.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>Working alongside the Director of Digital Experience I crafted this microsite design that leveraged the Uberflip platform. I then prepared all assets and design files and successfully handed them off to the Uberflip team for the build.</p>
+          <div class="two-col">
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/learning-center-home-page-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/learning-center-home-page-360.jpg">
+              <img class="shadow" src="/assets/images/projects/learning-center-home-page-1200.jpg" alt="learning center home page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/learning-center-single-flipbook-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/learning-center-single-flipbook-360.jpg">
+              <img class="shadow" src="/assets/images/projects/learning-center-single-flipbook-1200.jpg" alt="learning center flipbook page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/learning-center-single-video-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/learning-center-single-video-360.jpg">
+              <img class="shadow" src="/assets/images/projects/learning-center-single-video-1200.jpg" alt="learning center video page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/learning-center-single-post-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/learning-center-single-post-360.jpg">
+              <img class="shadow" src="/assets/images/projects/learning-center-single-post-1200.jpg" alt="learning center blog post design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/learning-center-author-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/learning-center-author-360.jpg">
+              <img class="shadow" src="/assets/images/projects/learning-center-author-1200.jpg" alt="learning center author page design">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More MasterControl Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/mastercontrol/med-device-trends-brief.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/med-device-trends-brief-thumbnail.jpg" alt="med device trends brief thumbnail">
+                </div>
+                <p>Med Device Trends Brief</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/industry-hub.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/industry-hub-thumbnail.jpg" alt="industry hub thumbnail">
+                </div>
+                <p>Industry Hub</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/association-hub.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/association-hub-thumbnail.jpg" alt="association hub thumbnail">
+                </div>
+                <p>Association Hub</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/ppc-landing-pages.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/ppc-pages-thumbnail.jpg" alt="PPC pages thumbnail">
+                </div>
+                <p>PPC Landing Pages</p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
   
@@ -48,8 +140,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

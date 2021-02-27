@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Journey Research | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,113 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/mastercontrol.html">Back to MasterControl</a>
-        <h1>User Journey Research</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/mastercontrol.html">MasterControl</a>
+          <p class="divider">/</p>
+          <p>User Journey Research</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>User Journey Research</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Role</p>
+              <p>Research</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Figma</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>UX research exercise to identify new opportunities.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>Shortly after rebranding the MasterControl Digital Experience Team was ready to begin improving the experience of our online forms. This project was to perform some research and create user journeys around the form completion process in effort to identify new opportunities.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>I used empathy to review what the user may experience before, during, and after a form completion to identify barriers and ways to reassure them after giving up data. These matrices are used as a visual artifact to help explain the findings. This exercise identified several key improvements that would be made at later dates. </p>
+          <div class="one-col">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/user-journey-research-troy-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/user-journey-research-troy-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/user-journey-research-troy-360.jpg">
+              <img class="shadow" src="/assets/images/projects/user-journey-research-troy-1200.jpg" alt="user journey diagram for Troy">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/user-journey-research-sue-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/user-journey-research-sue-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/user-journey-research-sue-360.jpg">
+              <img class="shadow" src="/assets/images/projects/user-journey-research-sue-1200.jpg" alt="user journey diagram for Sue">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More MasterControl Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/mastercontrol/rebrand-exploration.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/rebrand-exploration-thumbnail.jpg" alt="rebrand exploration concept thumbnail">
+                </div>
+                <p>Rebrand Exploration</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/mx-roi-calculator.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/mx-roi-calculator-thumbnail.jpg" alt="Mx ROI calculcator thumbnail">
+                </div>
+                <p>Mx ROI Calculator</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/virtual-masters-conference.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/virtual-conference-2020-thumbnail.jpg" alt="virtual masters conference thumbnail">
+                </div>
+                <p>Virtual Masters Conference</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/industry-hub.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/industry-hub-thumbnail.jpg" alt="industry hub thumbnail">
+                </div>
+                <p>Industry Hub</p>
+              </a>
+            </div>            
+          </div>
         </div>
       </section>
   
@@ -48,8 +127,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

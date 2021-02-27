@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association Hub | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,122 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/mastercontrol.html">Back to MasterControl</a>
-        <h1>Association Hub</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/mastercontrol.html">MasterControl</a>
+          <p class="divider">/</p>
+          <p>Association Hub</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Association Hub</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Roles</p>
+              <p>Design</p>
+              <p>Front-end Development</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Figma, HTML, CSS, Javascript</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Microsite design to showcase MasterControl association partnerships</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>MasterControl's association partnerships grew significantly in 2019 and to support them we needed a location within our site to showcase partnerships and events for recruiting. The project also needed to provide shareable details for specific association events.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>I designed and built a custom microsite within mastercontrol.com with easy-to-update and maintain pages. These pages gave an easily accessible avenue for future partners to view events and sign up to attend. Eventually, this section of our marketing merged with other teams as the COVID-19 pandemic began.</p>
+          <div class="two-col">
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/association-hub-landing-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/association-hub-landing-360.jpg">
+              <img class="shadow" src="/assets/images/projects/association-hub-landing-1200.jpg" alt="association hub landing page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/association-hub-events-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/association-hub-events-360.jpg">
+              <img class="shadow" src="/assets/images/projects/association-hub-events-1200.jpg" alt="association hub events page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/association-hub-single-event-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/association-hub-single-event-360.jpg">
+              <img class="shadow" src="/assets/images/projects/association-hub-single-event-1200.jpg" alt="association hub single event page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/association-hub-partners-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/association-hub-partners-360.jpg">
+              <img class="shadow" src="/assets/images/projects/association-hub-partners-1200.jpg" alt="association hub partner page design">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More MasterControl Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/mastercontrol/med-device-trends-brief.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/med-device-trends-brief-thumbnail.jpg" alt="med device trends brief thumbnail">
+                </div>
+                <p>Med Device Trends Brief</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/virtual-masters-conference.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/virtual-conference-2020-thumbnail.jpg" alt="virtual masters conference thumbnail">
+                </div>
+                <p>Virtual Masters Conference</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/ppc-landing-pages.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/ppc-pages-thumbnail.jpg" alt="PPC pages thumbnail">
+                </div>
+                <p>PPC Landing Pages</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/mastercontrol/learning-center.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/learning-center-thumbnail.jpg" alt="learning center thumbnail">
+                </div>
+                <p>Learning Center</p>
+              </a>
+            </div>            
+          </div>
         </div>
       </section>
   
@@ -48,8 +136,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 

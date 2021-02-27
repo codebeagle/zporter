@@ -1,22 +1,9 @@
-/* ---------- Global ---------- */
-:root {
-  --display-font: 'Roboto Condensed', sans-serif;
-  --base-font: 'Roboto', sans-serif;
-
-  --black: #000000;
-  --gray-000: #EDEDED;
-  --gray-100: #D7D7D7;
-  --gray-500: #333232;
-  --white: #FFFFFF;
-  --orange: #FF9900;
-}
-
 html {
-  background-color: var(--black);
+  background-color: #000000;
 }
 
 html, html * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -24,62 +11,336 @@ body {
   padding: 0;
 }
 
-
-
-/* ---------- Typography ---------- */
 h1 {
-  font-family: var(--display-font);
-  font-weight: 300;
+  font-family: "Roboto Condensed", helvetica, arial, sans-serif;
+  font-weight: 100;
   font-size: 72px;
   line-height: 100%;
 }
 
 h2 {
-  font-family: var(--base-font);
-  font-weight: 700;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
   font-size: 24px;
   line-height: 125%;
 }
 
 p, li, a, label, div {
-  font-family: var(--base-font);
-  font-weight: 300;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 150%;
 }
 
 a {
-  color: var(--orange);
+  color: #FF9900;
 }
 
+.content-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #D7D7D7;
+}
 
-
-/* ---------- Utilities ---------- */
 .container {
-  max-width: 1280px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .content {
-  background-color: var(--white);
+  background-color: #FFFFFF;
+  position: relative;
+  padding: 0 0 60px;
 }
 
-.flex-wrap {
+.flex-wrapper {
   display: flex;
 }
 
-
-
-/* ---------- Themes ---------- */
-.neutral {
-  background-color: var(--gray-000);
+.shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.neutral {
+  background-color: #EDEDED;
+}
 
-/* ---------- Header ---------- */
+.white-band,
+.black-band {
+  width: 100%;
+  height: 60px;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+}
+
+.white-band {
+  background-color: #FFFFFF;
+  bottom: 0;
+}
+
+.black-band {
+  background-color: #000000;
+  top: 0;
+}
+
+.photo-right {
+  float: right;
+  margin-left: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .one-col {
+    margin: 40px 40px 0;
+    text-align: center;
+  }
+  .one-col img {
+    margin: 0 0 40px;
+  }
+
+  .two-col {
+    column-count: 2;
+    column-gap: 30px;
+    margin-top: 40px;
+  }
+  .two-col img {
+    margin: 0 0 20px;
+  }
+}
+.block-content {
+  padding: 80px 0;
+}
+
+.block-content p {
+  max-width: 1020px;
+}
+
+.block-content img {
+  max-width: 100%;
+}
+
+.block-featured {
+  max-width: 620px;
+  width: 100%;
+  height: 520px;
+  background-image: url("/assets/images/projects/mx-roi-calculator-featured.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 40px;
+  z-index: 1;
+}
+
+.block-featured .block-featured-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.block-featured h2 {
+  margin: 0 0 5px 0;
+  color: #FFFFFF;
+}
+
+.block-featured p {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.about-featured {
+  max-width: 485px;
+  width: 100%;
+  height: 520px;
+  background-image: url("/assets/images/zporter-portrait.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 40px;
+  z-index: 1;
+}
+
+.block-prev-work {
+  margin-top: 60px;
+}
+
+.project-block-content {
+  padding: 80px 0;
+}
+
+.project-block-content p {
+  max-width: 1020px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 30px;
+}
+
+@media screen and (min-width: 525px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.project-item a {
+  text-align: center;
+}
+
+.project-item .thumbnail {
+  height: 240px;
+  overflow: hidden;
+  background-color: #C4C4C4;
+  position: relative;
+}
+
+.project-item .thumbnail img {
+  position: absolute;
+  margin: auto;
+  height: 240px;
+  top: 0;
+  bottom: 0;
+  transition: all 200ms ease-out;
+  transform: translateX(-50%);
+  transform-origin: center;
+}
+
+.project-item .thumbnail:hover img {
+  height: 255px;
+}
+
+.project-tag {
+  background-color: #FF9900;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.block-project {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 10px;
+}
+.block-project.block-project-mastercontrol {
+  background-image: url("/assets/images/banners/banner-mastercontrol.jpg");
+}
+.block-project.block-project-aquamira {
+  background-image: url("/assets/images/banners/banner-aquamira.jpg");
+}
+.block-project.block-project-melaleuca {
+  background-image: url("/assets/images/banners/banner-melaleuca.jpg");
+}
+.block-project.block-project-herff-jones {
+  background-image: url("/assets/images/banners/banner-herff-jones.jpg");
+}
+.block-project:hover .overlay {
+  opacity: 0.333;
+}
+.block-project .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: all 250ms ease-out;
+}
+.block-project a {
+  color: #FFFFFF;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.block-project h2 {
+  margin: 0 0 5px 0;
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.block-project p {
+  margin: 0;
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.features {
+  padding: 60px 0 0;
+}
+
+.features .container {
+  flex-direction: column;
+}
+
+.features .block-feature {
+  margin: 0 0 40px;
+}
+
+.features .block-feature p {
+  margin-bottom: 40px;
+}
+
+.features .block-feature hr {
+  border: 1px solid #EDEDED;
+}
+
+@media screen and (min-width: 1024px) {
+  .features .container {
+    flex-direction: row;
+  }
+
+  .features .block-feature {
+    margin: 0 40px;
+  }
+}
+footer {
+  background-color: #000000;
+}
+
+footer p {
+  color: #6B6A6A;
+  text-align: center;
+  font-size: 14px;
+}
+
 header {
-  background-color: var(--black);
+  background-color: #000000;
   padding: 32px 0;
 }
 
@@ -94,7 +355,7 @@ header nav {
 }
 
 header a {
-  color: var(--white);
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -107,86 +368,124 @@ header a:last-child {
   margin-right: 0;
 }
 
-
-
-/* ---------- Footer ---------- */
-footer {
-  background-color: var(--black);
-}
-
-footer p {
-  color: var(--white);
-  text-align: center;
-}
-
-
-
-/* ---------- Hero ---------- */
 .hero h1,
 .hero p {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
-
-
-/* ---------- Content Block ---------- */
-.block-content {
-  padding: 80px 0;
+.hero-alt {
+  padding-bottom: 60px;
 }
 
-.block-content p {
-  max-width: 1020px;
-}
-
-
-
-/* ---------- Project Block ---------- */
-.project-block-content {
-  padding: 80px 0;
-}
-
-.project-block-content p {
-  max-width: 1020px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
-}
-
-.project-item a {
-  text-align: center;
-}
-
-.project-item .thumbnail {
-  width: 100%;
-  height: 240px;
-  background-color: #C4C4C4;
-}
-
-.block-project {
-  height: 300px;
-  background-color: #6B6A6A;
+.hero-home {
   position: relative;
-  margin-bottom: 10px;
 }
 
-.block-project a {
-  color: var(--white);
-  text-decoration: none;
+.hero .flex-wrapper {
+  flex-direction: column;
+}
+
+.hero-home .hero-content {
+  max-width: 655px;
+  padding-right: 60px;
+  z-index: 1;
+}
+.hero-home .hero-content .self-portrait-thumbnail {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.hero-home h1 {
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 56px;
+  z-index: 1;
+}
+
+.hero-work {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.hero-work .overlay {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  background-color: #000000;
+  opacity: 0.9;
+  z-index: 0;
+  top: 0;
+}
+.hero-work .container {
+  z-index: 1;
+  position: relative;
+}
+.hero-work.hero-mastercontrol {
+  background-image: url("/assets/images/hero/hero-mastercontrol.jpg");
+}
+.hero-work.hero-aquamira {
+  background-image: url("/assets/images/hero/hero-aquamira.jpg");
+}
+.hero-work.hero-melaleuca {
+  background-image: url("/assets/images/hero/hero-melaleuca.jpg");
+}
+.hero-work.hero-herff-jones {
+  background-image: url("/assets/images/hero/hero-herff-jones.jpg");
 }
 
-.block-project h2 {
-  margin: 0 0 5px 0;
+.hero-work .flex-wrapper,
+.hero-project .flex-wrapper {
+  justify-content: space-between;
 }
 
-.block-project p {
-  margin: 0;
+.hero-work .project-meta,
+.hero-project .project-meta {
+  max-width: 380px;
+  width: 100%;
+  float: right;
+}
+
+.hero-work .project-meta .meta-item,
+.hero-project .project-meta .meta-item {
+  margin-top: 30px;
+}
+
+.hero-work .project-meta p,
+.hero-project .project-meta p {
+  margin: 5px 0;
+}
+
+.hero-work,
+.hero-project {
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-work .flex-wrapper,
+.hero-project .flex-wrapper {
+    flex-direction: row;
+  }
+
+  .hero-work .project-meta .meta-item,
+.hero-project .project-meta .meta-item {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-home .flex-wrapper {
+    flex-direction: row;
+  }
+}
+.breadcrumb {
+  display: flex;
+}
+.breadcrumb .divider {
+  color: #6B6A6A;
+}
+.breadcrumb * {
+  margin: 0 10px 0 0;
+  font-size: 15px;
 }

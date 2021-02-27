@@ -1,0 +1,29 @@
+.features {
+    padding: 60px 0 0;
+  }
+  
+  .features .container {
+    flex-direction: column;
+  }
+  
+  .features .block-feature {
+    margin: 0 0 40px;
+  }
+  
+  .features .block-feature p {
+    margin-bottom: 40px;
+  }
+  
+  .features .block-feature hr {
+    border: 1px solid $gray-000;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .features .container {
+      flex-direction: row;
+    }
+  
+    .features .block-feature {
+      margin: 0 40px;
+    }
+  }

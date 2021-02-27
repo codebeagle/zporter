@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uproar | zporter.com</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,34 +12,124 @@
     <header>
       <div class="container head-flex">
         <a href="/">
-          <img src="../../assets/images/logo-zporter.png" alt="zporter logo">
+          <img src="/assets/images/logo-zporter.png" alt="zporter logo">
         </a>
         <nav>
           <a href="/work/">Work</a>
-          <a href="/theory.html">Theory</a>
-          <a href="/about.html">About</a>
+<a href="/theory.html">Theory</a>
+<a href="/about.html">About</a>
         </nav>
       </div>
     </header>
 
     <section class="hero hero-project">
       <div class="container">
-        <a href="/work/herff-jones.html">Back to MasterControl</a>
-        <h1>Uproar</h1>
-        <div class="project-meta">
-          <div class="meta-item">
-            <p class="content-label">Summary</p>
-            <p>{{summary}}</p>
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <p class="divider">/</p>
+          <a href="/work/">Work</a>
+          <p class="divider">/</p>
+          <a href="/work/herff-jones.html">Herff Jones</a>
+          <p class="divider">/</p>
+          <p>Uproar</p>
+        </div>
+        <div class="flex-wrapper">
+          <h1>Uproar</h1>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="content-label">Role</p>
+              <p>Design</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Tools</p>
+              <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+            </div>
+            <div class="meta-item">
+              <p class="content-label">Summary</p>
+              <p>Yearbook design package for Mark Morris High School.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="content">
-      <section class="content-block">
+      <section class="block-content">
         <div class="container">
           <h2>The Challenge</h2>
-          <p>{{content}}</p>
+          <p>The yearbook staff at Mark Morris High School wanted their yearbook to make a bold visual statement using their theme, "Uproar." The design needed to set a tone of celebration and energy with music as a visual element. The design package was order included a cover, front endsheet, title page, and division page design.</p>
+        </div>
+      </section>
+
+      <section class="block-content neutral">
+        <div class="container">
+          <h2>The Solution</h2>
+          <p>To acheive the target look and feel, I chose to use vibrant colors and lines eminating from the musician. To enhance the contrast and impact I relied heavily on stark black and white shapes and white space. Though challenging to output due to gamut limitation, the final book was produced to have rich color throughout.</p>
+          <div class="one-col">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/uproar-cover-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/uproar-cover-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/uproar-cover-360.jpg">
+              <img class="shadow" src="/assets/images/projects/uproar-cover-1200.jpg" alt="cover design">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/uproar-front-end-sheet-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/uproar-front-end-sheet-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/uproar-front-end-sheet-360.jpg">
+              <img class="shadow" src="/assets/images/projects/uproar-front-end-sheet-1200.jpg" alt="front endsheet design">
+            </picture>
+            <picture>
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/uproar-title-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/uproar-title-360.jpg">
+              <img class="shadow" src="/assets/images/projects/uproar-title-720.jpg" alt="title page design">
+            </picture>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/projects/uproar-division-1200.jpg">
+              <source media="(min-width: 460px)" srcset="/assets/images/projects/uproar-division-720.jpg">
+              <source media="(min-width: 0)" srcset="/assets/images/projects/uproar-division-360.jpg">
+              <img class="shadow" src="/assets/images/projects/uproar-division-1200.jpg" alt="division page design">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-block-content">
+        <div class="container">
+          <h2>More Herff Jones Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <a href="/projects/herff-jones/journey.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/journey-thumbnail.jpg" alt="show your wild side yearbook thumbnail">
+                </div>
+                <p>Journey</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/show-your-wild-side.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/show-your-wild-side-thumbnail.jpg" alt="show your wild side yearbook thumbnail">
+                </div>
+                <p>Show Your Wild Side</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/above-and-beyond.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/above-and-beyond-thumbnail.jpg" alt="above and beyond yearbook thumbnail">
+                </div>
+                <p>Above and Beyond</p>
+              </a>
+            </div>
+            <div class="project-item">
+              <a href="/projects/herff-jones/re-define.html">
+                <div class="thumbnail shadow">
+                  <img src="/assets/images/projects/re-define-thumbnail.jpg" alt="redefine yearbook thumbnail">
+                </div>
+                <p>Redefine</p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
   
@@ -48,8 +138,8 @@
     
     <footer>
       <div class="container">
-        <p><strong>Return to Top</strong></p>
-        <p>This site was designed using Figma and crafted by hand using vanilla HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
+        <!-- <p><strong>Return to Top</strong></p> -->
+        <p>This site was designed using Figma and crafted by hand using  HTML, CSS, and Javascript.<br>©2021 Zachary Porter. All Rights Reserved </p>
       </div>
     </footer>
 
