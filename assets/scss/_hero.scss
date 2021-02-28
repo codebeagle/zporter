@@ -19,6 +19,7 @@
   max-width: 655px;
   padding-right: 60px;
   z-index: 1;
+  margin-bottom: 20px;
   
   .self-portrait-thumbnail {
     height: 100px;
@@ -101,6 +102,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-home .hero-content {
+    margin-bottom: 60px;
+  }
+
   .hero-work .flex-wrapper,
   .hero-project .flex-wrapper {
     flex-direction: row;
