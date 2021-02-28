@@ -508,3 +508,19 @@ header a {
   margin: 0 10px 0 0;
   font-size: 15px;
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #FF9900;
+  color: #FFFFFF;
+  transition: all 250ms ease-out;
+}
+.btn-primary:hover {
+  background-color: #FFAE00;
+}
