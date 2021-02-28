@@ -1,7 +1,7 @@
 h1 {
     font-family: $display-font;
     font-weight: 100;
-    font-size: 72px;
+    font-size: 56px;
     line-height: 100%;
 }
 
@@ -28,4 +28,10 @@ a {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $gray-100;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 72px;
+    }
 }
